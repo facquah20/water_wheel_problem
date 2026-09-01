@@ -1,0 +1,57 @@
+# =========================================================================
+# Executables and Build Directories
+# =========================================================================
+# Ignore specific executables by name (update 'my_program' to your project's name)
+my_program
+my_program.exe
+
+# Ignore all compiled files with no extension (common for compiled C++ on Linux/macOS)
+# Note: This matches files without an extension. To make sure it doesn't accidentally 
+# catch source files without extensions, standard build directories (below) are safer.
+*
+!*/
+!*.*
+
+# Standard build artifact folders
+/[Bb]uild/
+/[Cc][]make-build-*/
+/out/
+/bin/
+/x64/
+/x86/
+/[Dd]ebug/
+/[Rr]elease/
+
+# =========================================================================
+# Compiled Objects and Libraries
+# =========================================================================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# =========================================================================
+# Profiling and Debugging Artifacts
+# =========================================================================
+# gprof profiling data file
+gmon.out
+# Visual Studio / Visual Studio Code profiling and debugging
+*.pdb
+*.ilk
+*.idb
+*.suo
+*.user
+
+# =========================================================================
+# IDE and Editor Specific Folders (Optional but Recommended)
+# =========================================================================
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+
